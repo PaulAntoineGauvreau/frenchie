@@ -17,6 +17,12 @@ body {
 	font-family: "Courier New", monospace;
 	height: 100vh;
 	overflow: hidden;
+
+	@media (max-width: 768px) {
+		border: 8px solid $grey;
+  }
+
+
 }
 
 .c-flyer {
@@ -35,6 +41,11 @@ body {
 	position: relative;
 	overflow: hidden;
 	border-radius: 2px;
+
+	@media (max-width: 768px) {
+		height: calc(90vh - 8px);
+		width: calc((100vh - 8px) * (17 / 22));
+  }
 }
 
 .rotate {
