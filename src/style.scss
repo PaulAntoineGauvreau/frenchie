@@ -125,14 +125,15 @@ body {
 
 .c-flyer_title {
 	font-family: "Bebas Neue", sans-serif;
-	font-size: 2em;
+
 	font-style: normal;
-	width: 100%;
-	max-width: 100%; /* Set a max-width to control responsiveness */
+	width: 90%;
+	max-width: 90%; 
 	box-sizing: border-box;
 	line-height: 0.6em;
 	margin-top: 24px;
 	color: $black;
+	letter-spacing: -5%;
 }
 
 .c-flyer_texts .c-flyer_text:nth-of-type(1) {
