@@ -43,8 +43,8 @@ body {
 	border-radius: 2px;
 
 	@media (max-width: 768px) {
-		height: calc(88vh - 8px);
-		width: calc((100vh - 8px) * (17 / 22));
+		height: calc(90vh - 48px);
+		width: calc((100vh - 48px) * (17 / 22));
   }
 }
 
@@ -127,13 +127,14 @@ body {
 	font-family: "Bebas Neue", sans-serif;
 
 	font-style: normal;
-	width: 90%;
-	max-width: 90%; 
+	width: 100%;
+	max-width: 100%; 
 	box-sizing: border-box;
 	line-height: 0.6em;
 	margin-top: 24px;
 	color: $black;
 	letter-spacing: -5%;
+	white-space: nowrap;
 }
 
 .c-flyer_texts .c-flyer_text:nth-of-type(1) {
@@ -202,3 +203,12 @@ body {
 		height: 100%;
 	}
 }
+
+@media not all and (min-resolution: 0.001dpcm) { 
+	@supports (-webkit-appearance: none) and (stroke-color: transparent) {
+	  /* Specific styles for Safari */
+	  .c-flyer_title {
+		display: flex;
+	  }
+	}
+  }
