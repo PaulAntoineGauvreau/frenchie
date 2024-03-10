@@ -6,8 +6,9 @@ function updateFontSize() {
 	for (let i = 0; i < words.length; i++) {
 		let container = words[i].closest("[data-js-container]");
 		let baseFontSize = words[i].dataset.jsSize;
-		words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 31}px`;
-		console.log(container);
+		//words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 31}px`;
+		words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 36}px`;
+
 	}
 }
 
