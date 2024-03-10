@@ -42,10 +42,10 @@ body {
 	overflow: hidden;
 	border-radius: 2px;
 
-// 	@media (max-width: 768px) {
-// 		height: calc(90vh - 48px);
+	@media (max-width: 768px) {
+		height: 90vh;
 // 		width: calc((100vh - 48px) * (17 / 22));
-//   }
+ }
 }
 
 .rotate {
