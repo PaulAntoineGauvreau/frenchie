@@ -6,16 +6,18 @@ function updateFontSize() {
 	for (let i = 0; i < words.length; i++) {
 		let container = words[i].closest("[data-js-container]");
 		let baseFontSize = words[i].dataset.jsSize;
-		//words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 31}px`;
-		words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 36}px`;
+		if (window.innerWidth < 768) {
+			words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 35}px`;
+		} else {
+			words[i].style.fontSize = `${(baseFontSize * container.offsetWidth) / 31}px`;
+		}
 
 	}
 }
 
-// Call the function initially and on window resize
 window.addEventListener("resize", updateFontSize);
 window.addEventListener("load", updateFontSize);
-// Get all elements with data-js-grab attribute
+
 const grabElements = document.querySelectorAll("[data-js-grab]");
 
 grabElements.forEach((element) => {
