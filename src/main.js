@@ -1,4 +1,5 @@
 import "./style.scss";
+import { Draggable } from "gsap";
 
 function updateFontSize() {
 	let words = document.querySelectorAll("[data-js-size]");
